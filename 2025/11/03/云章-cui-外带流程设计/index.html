@@ -1,0 +1,660 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>外带流程设计 | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="外带流程设计"><meta name="application-name" content="外带流程设计"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="外带流程设计"><meta property="og:url" content="https://cuishuqq.github.io/2025/11/03/%E4%BA%91%E7%AB%A0-cui-%E5%A4%96%E5%B8%A6%E6%B5%81%E7%A8%8B%E8%AE%BE%E8%AE%A1/index.html"><meta property="og:site_name" content="Hexo"><meta property="og:description" content="外带获批后，章并不能直接使用；只有再完成一次用章申请并获批，智能章才临时解锁、允许盖章。12345678910111213flowchart LR    A[&amp;quot;申请外带章&amp;quot;] --&amp;gt; B[&amp;quot;外带审批&amp;quot;]    B --&amp;gt;|通过| C[&amp;quot;管"><meta property="og:locale" content="en"><meta property="og:image" content="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg"><meta property="article:author" content="John Doe"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg"><meta name="description" content="外带获批后，章并不能直接使用；只有再完成一次用章申请并获批，智能章才临时解锁、允许盖章。12345678910111213flowchart LR    A[&amp;quot;申请外带章&amp;quot;] --&amp;gt; B[&amp;quot;外带审批&amp;quot;]    B --&amp;gt;|通过| C[&amp;quot;管"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="https://cuishuqq.github.io/2025/11/03/%E4%BA%91%E7%AB%A0-cui-%E5%A4%96%E5%B8%A6%E6%B5%81%E7%A8%8B%E8%AE%BE%E8%AE%A1/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: {"enable":true,"img":"https://upload-bbs.miyoushe.com/upload/2024/07/27/125766904/ba62475f396df9de3316a08ed9e65d86_5680958632268053399..png"},
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: undefined,
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"Author: John Doe","link":"Link: ","source":"Source: Hexo","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.","copySuccess":"Copy success, copy and reprint please mark the address of this article"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'Hexo',
+  title: '外带流程设计',
+  postAI: '',
+  pageFillDescription: '外带获批后章并不能直接使用；只有再完成一次用章申请并获批智能章才临时解锁、允许盖章。, 二、外带申请流程, 1. 申请内容, 2. 审批通过后不是直接把章交出去, 3. 外带期间的状态, 三、用章申请流程, 四、智能章实际放行条件, 五、蓝牙断开与双端告警方案, 1. 正常连接机制, 2. 蓝牙断开后的分级处理, 六、外带与用章的关键约束, 七、建议新增的核心数据对象外带获批后章并不能直接使用只有再完成一次用章申请并获批智能章才临时解锁允许盖章申请外带章外带审批通过管理员交接章绑定申请人手机外带中智能章与手机保持蓝牙连接申请用章选择同一枚章业务材料用章审批通过下发一次用章授权智能章核验条件后允许用章采集照片时间文件哈希等证据申请归还并完成验收蓝牙断开章端手机端平台告警条件不满足拒绝解锁锁定智能章业务对象本质获批后得到什么是否可直接用章外带申请章的临时保管与移动许可外带许可交接记录手机绑定不可以用章申请某项业务的实际用章许可一次或限定次数的用章授权可以但需设备实时核验用章授权下发给智能章的控制凭证有效时间地点文件次数限制仅满足全部条件时可用可以概括为一句话外带申请授予带章权用章申请授予盖章权两项授权同时有效智能章才可使用二外带申请流程申请内容每一笔外带申请只能对应一枚实体章需填写申请人所属部门联系电话印章名称和编号外带事由外出地点客户单位或办事地点预计外带开始归还时间随行人员责任承诺必要业务附件风险等级外带申请可有多个用章事项但每一次实际用章都要单独发起用章申请审批通过后不是直接把章交出去管理员需要在系统中执行交接核对申请人身份选择本次外带的智能章通过手机扫码或蓝牙配对将该章绑定到申请人的手机智能章记录交接时间地点管理员申请人系统生成外带许可智能章进入已外带未授权用章状态此时章可以被携带但保持锁定不能实际用章外带期间的状态待提交审批中已批准待交接已交接外带中默认锁定待归还已归还已关闭若审批不通过则为已驳回若资料需要补充则为退回修改三用章申请流程用章申请必须在对应外带许可有效期间内创建并且自动带出外带申请编号已外带的印章当前绑定的申请人手机外带地点和有效期申请人还需要填写用章事项和用途对方单位用章次数用章地点本次要盖章的文件可上传多个每个文件的哈希值预计用章时间必要的业务材料审批完成后系统生成一次用章授权下发给云平台申请人手机和智能章授权应至少限制指定印章指定申请人及其绑定手机指定外带许可有效起止时间允许次数例如一次允许地点或地理围栏文件哈希清单是否必须拍照录像风险等级和附加审批条件用章完成或授权超时后授权自动失效智能章立即重新锁定四智能章实际放行条件智能章不是审批通过就永久解锁而是每次使用前核验以下条件条件不满足时的处理印章状态正常未冻结未挂失未被交接回收禁止用章存在有效外带许可禁止用章存在已审批且未过期的用章授权禁止用章当前智能章与指定申请人手机蓝牙已绑定且在线禁止用章并告警手机身份与登录账号匹配禁止用章当前时间在授权有效期内禁止用章当前位于允许范围内禁止用章或进入人工复核用章次数未超过授权次数禁止用章待盖文件哈希与审批文件一致禁止用章要求重新审批设备无拆卸破坏异常离线等高风险状态禁止用章并升级告警因此一个实际用章动作可以理解为有效外带许可有效用章授权手机蓝牙在身边人章时间地点文件均一致智能章允许执行一次用章五蓝牙断开与双端告警方案这是本次方案里非常重要的风险控制点正常连接机制智能章与申请人手机通过蓝牙建立唯一绑定手机持续向智能章发送心跳智能章通过向云平台上报蓝牙状态电量锁定状态设备状态手机同时向平台上报当前登录人蓝牙连接状态手机位置网络状态平台可以同时判断章的位置和人的位置是否一致蓝牙断开后的分级处理建议不要因瞬时信号抖动立刻认定失联而采用分级规则场景系统动作蓝牙信号弱或短暂丢失持续不足秒记录事件手机提示请靠近智能章连续断开超过秒智能章蜂鸣灯光报警手机强提醒平台生成中风险告警连续断开超过分钟智能章锁定通知申请人印章管理员平台升级高风险告警蓝牙断开且距离明显异常直接高风险告警通知主管人员蓝牙断开且设备被拆卸移动异常或离线严重告警可立即冻结未使用授权报警应覆盖三端智能章端蜂鸣器灯光屏幕提示锁定申请人手机端强提醒震动通知云平台端告警中心管理员通知必要时短信或电话升级断开报警后即使恢复连接也不能直接把风险事件自动消失系统应保留断开时长双方恢复时间和处理记录由管理员确认关闭六外带与用章的关键约束一枚章一次只能绑定给一笔有效外带许可一笔外带申请只对应一枚章一笔外带申请下可发起多笔用章申请每笔用章申请只能使用该外带申请中的同一枚章一笔用章申请可上传多份文件文件内容变化文件哈希变化原用章审批自动失效必须重新申请外带许可到期印章冻结印章交回手机解绑申请人变更时所有未使用的用章授权自动失效智能章外带期间默认锁定没有有效用章授权不允许操作完成用章后必须上传证据缺少照片视频或文件哈希时先提醒逾期升级高风险告警归还时由管理员验收印章核对未关闭告警核对用章记录和证据后才能结束外带七建议新增的核心数据对象数据表对象用途外带申请主表管理员与申请人的交接归还记录外带期间智能章与手机的绑定关系实际用章申请主表一次用章申请下的多个文件及哈希审批后下发的临时用章授权蓝牙连接断开恢复信号弱事件智能章轨迹和定位事件申请人手机的位置核验记录每一次实际用章记录照片视频文件哈希等证据风险告警及处置闭环记录',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2026-07-25 16:23:35',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 8.0.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">Hexo</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://github.com/cuishuqiang-edu/picx-images-hosting/raw/master/b0bdde69aa51ac660533ecc1c5367b19.2a5ri5dqaa.webp" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://github.com/cuishuqiang-edu/picx-images-hosting/raw/master/b0bdde69aa51ac660533ecc1c5367b19.2a5ri5dqaa.webp"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://github.com/cuishuqiang-edu/picx-images-hosting/raw/master/6a1e2e6aef3b49c21652742017104ad4.7lko2v0b97.webp" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://github.com/cuishuqiang-edu/picx-images-hosting/raw/master/6a1e2e6aef3b49c21652742017104ad4.7lko2v0b97.webp"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> Newest Comments</span></div><div class="aside-list"><span>loading...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2026/06/"><span class="card-archive-list-date">June 2026</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2026/05/"><span class="card-archive-list-date">May 2026</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2026/03/"><span class="card-archive-list-date">March 2026</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2026/01/"><span class="card-archive-list-date">January 2026</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/12/"><span class="card-archive-list-date">December 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/11/"><span class="card-archive-list-date">November 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">9</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/10/"><span class="card-archive-list-date">October 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">6</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="article-meta tags"></span></div></div><h1 class="post-title" itemprop="name headline">外带流程设计</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2025-11-03T02:29:37.000Z" title="Created 2025-11-03 10:29:37">2025-11-03</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2026-07-25T08:23:35.589Z" title="Updated 2026-07-25 16:23:35">2026-07-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为长沙"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>长沙</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src=""></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="https://cuishuqq.github.io/2025/11/03/%E4%BA%91%E7%AB%A0-cui-%E5%A4%96%E5%B8%A6%E6%B5%81%E7%A8%8B%E8%AE%BE%E8%AE%A1/"><header><h1 id="CrawlerTitle" itemprop="name headline">外带流程设计</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">John Doe</span><time itemprop="dateCreated datePublished" datetime="2025-11-03T02:29:37.000Z" title="Created 2025-11-03 10:29:37">2025-11-03</time><time itemprop="dateCreated datePublished" datetime="2026-07-25T08:23:35.589Z" title="Updated 2026-07-25 16:23:35">2026-07-25</time></header><h2 id="外带获批后，章并不能直接使用；只有再完成一次用章申请并获批，智能章才临时解锁、允许盖章。"><a href="#外带获批后，章并不能直接使用；只有再完成一次用章申请并获批，智能章才临时解锁、允许盖章。" class="headerlink" title="外带获批后，章并不能直接使用；只有再完成一次用章申请并获批，智能章才临时解锁、允许盖章。"></a>外带获批后，章并不能直接使用；只有再完成一次用章申请并获批，智能章才临时解锁、允许盖章。</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">    A[&quot;申请外带章&quot;] --&gt; B[&quot;外带审批&quot;]</span><br><span class="line">    B --&gt;|通过| C[&quot;管理员交接：章绑定申请人手机&quot;]</span><br><span class="line">    C --&gt; D[&quot;外带中：智能章与手机保持蓝牙连接&quot;]</span><br><span class="line">    D --&gt; E[&quot;申请用章（选择同一枚章、业务材料）&quot;]</span><br><span class="line">    E --&gt; F[&quot;用章审批&quot;]</span><br><span class="line">    F --&gt;|通过| G[&quot;下发一次用章授权&quot;]</span><br><span class="line">    G --&gt; H[&quot;智能章核验条件后允许用章&quot;]</span><br><span class="line">    H --&gt; I[&quot;采集照片、GPS、时间、文件哈希等证据&quot;]</span><br><span class="line">    I --&gt; J[&quot;申请归还并完成验收&quot;]</span><br><span class="line"></span><br><span class="line">    D --&gt;|蓝牙断开| K[&quot;章端 + 手机端 + 平台告警&quot;]</span><br><span class="line">    H --&gt;|条件不满足| L[&quot;拒绝解锁/锁定智能章&quot;]</span><br></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th>业务对象</th>
+<th>本质</th>
+<th>获批后得到什么</th>
+<th>是否可直接用章</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>外带申请</td>
+<td>章的临时保管与移动许可</td>
+<td>外带许可、交接记录、手机绑定</td>
+<td>不可以</td>
+</tr>
+<tr>
+<td>用章申请</td>
+<td>某项业务的实际用章许可</td>
+<td>一次或限定次数的用章授权</td>
+<td>可以，但需设备实时核验</td>
+</tr>
+<tr>
+<td>用章授权</td>
+<td>下发给智能章的控制凭证</td>
+<td>有效时间、地点、文件、次数限制</td>
+<td>仅满足全部条件时可用</td>
+</tr>
+</tbody></table>
+<p>可以概括为一句话：</p>
+<blockquote>
+<p>外带申请授予“带章权”，用章申请授予“盖章权”；两项授权同时有效，智能章才可使用。</p>
+</blockquote>
+<hr>
+<h2 id="二、外带申请流程"><a href="#二、外带申请流程" class="headerlink" title="二、外带申请流程"></a>二、外带申请流程</h2><h3 id="1-申请内容"><a href="#1-申请内容" class="headerlink" title="1. 申请内容"></a>1. 申请内容</h3><p>每一笔外带申请只能对应一枚实体章，需填写：</p>
+<ul>
+<li>申请人、所属部门、联系电话；</li>
+<li>印章名称和编号；</li>
+<li>外带事由；</li>
+<li>外出地点、客户单位或办事地点；</li>
+<li>预计外带开始、归还时间；</li>
+<li>随行人员；</li>
+<li>责任承诺；</li>
+<li>必要业务附件；</li>
+<li>风险等级。</li>
+</ul>
+<p>外带申请可有多个用章事项，但每一次实际用章都要单独发起用章申请。</p>
+<h3 id="2-审批通过后，不是直接把章交出去"><a href="#2-审批通过后，不是直接把章交出去" class="headerlink" title="2. 审批通过后，不是直接把章交出去"></a>2. 审批通过后，不是直接把章交出去</h3><p>管理员需要在系统中执行“交接”：</p>
+<ol>
+<li>核对申请人身份；</li>
+<li>选择本次外带的智能章；</li>
+<li>通过手机 App 扫码或蓝牙配对，将该章绑定到申请人的手机；</li>
+<li>智能章记录交接时间、地点、管理员、申请人；</li>
+<li>系统生成外带许可 <code>Outbound Permit</code>；</li>
+<li>智能章进入“已外带、未授权用章”状态。</li>
+</ol>
+<p>此时章可以被携带，但保持锁定，不能实际用章。</p>
+<h3 id="3-外带期间的状态"><a href="#3-外带期间的状态" class="headerlink" title="3. 外带期间的状态"></a>3. 外带期间的状态</h3><pre><code>待提交 → 审批中 → 已批准 → 待交接
+→ 已交接/外带中（默认锁定）
+→ 待归还 → 已归还 → 已关闭
+</code></pre>
+<p>若审批不通过，则为“已驳回”；若资料需要补充，则为“退回修改”。</p>
+<hr>
+<h2 id="三、用章申请流程"><a href="#三、用章申请流程" class="headerlink" title="三、用章申请流程"></a>三、用章申请流程</h2><p>用章申请必须在对应外带许可有效期间内创建，并且自动带出：</p>
+<ul>
+<li>外带申请编号；</li>
+<li>已外带的印章；</li>
+<li>当前绑定的申请人手机；</li>
+<li>外带地点和有效期。</li>
+</ul>
+<p>申请人还需要填写：</p>
+<ul>
+<li>用章事项和用途；</li>
+<li>对方单位；</li>
+<li>用章次数；</li>
+<li>用章地点；</li>
+<li>本次要盖章的文件，可上传多个；</li>
+<li>每个文件的哈希值；</li>
+<li>预计用章时间；</li>
+<li>必要的业务材料。</li>
+</ul>
+<p>审批完成后，系统生成一次用章授权 <code>Use Grant</code>，下发给云平台、申请人手机和智能章。</p>
+<p>授权应至少限制：</p>
+<ul>
+<li>指定印章；</li>
+<li>指定申请人及其绑定手机；</li>
+<li>指定外带许可；</li>
+<li>有效起止时间；</li>
+<li>允许次数，例如一次；</li>
+<li>允许地点或地理围栏；</li>
+<li>文件哈希清单；</li>
+<li>是否必须拍照、录像；</li>
+<li>风险等级和附加审批条件。</li>
+</ul>
+<p>用章完成或授权超时后，授权自动失效，智能章立即重新锁定。</p>
+<hr>
+<h2 id="四、智能章实际放行条件"><a href="#四、智能章实际放行条件" class="headerlink" title="四、智能章实际放行条件"></a>四、智能章实际放行条件</h2><p>智能章不是“审批通过就永久解锁”，而是每次使用前核验以下条件：</p>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th>不满足时的处理</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>印章状态正常，未冻结、未挂失、未被交接回收</td>
+<td>禁止用章</td>
+</tr>
+<tr>
+<td>存在有效外带许可</td>
+<td>禁止用章</td>
+</tr>
+<tr>
+<td>存在已审批且未过期的用章授权</td>
+<td>禁止用章</td>
+</tr>
+<tr>
+<td>当前智能章与指定申请人手机蓝牙已绑定且在线</td>
+<td>禁止用章并告警</td>
+</tr>
+<tr>
+<td>手机身份与登录账号匹配</td>
+<td>禁止用章</td>
+</tr>
+<tr>
+<td>当前时间在授权有效期内</td>
+<td>禁止用章</td>
+</tr>
+<tr>
+<td>当前 GPS 位于允许范围内</td>
+<td>禁止用章或进入人工复核</td>
+</tr>
+<tr>
+<td>用章次数未超过授权次数</td>
+<td>禁止用章</td>
+</tr>
+<tr>
+<td>待盖文件哈希与审批文件一致</td>
+<td>禁止用章，要求重新审批</td>
+</tr>
+<tr>
+<td>设备无拆卸、破坏、异常离线等高风险状态</td>
+<td>禁止用章并升级告警</td>
+</tr>
+</tbody></table>
+<p>因此，一个实际用章动作可以理解为：<br>    有效外带许可<br>    + 有效用章授权<br>    + 手机蓝牙在身边<br>    + 人、章、时间、地点、文件均一致<br>    &#x3D; 智能章允许执行一次用章</p>
+<hr>
+<h2 id="五、蓝牙断开与双端告警方案"><a href="#五、蓝牙断开与双端告警方案" class="headerlink" title="五、蓝牙断开与双端告警方案"></a>五、蓝牙断开与双端告警方案</h2><p>这是本次方案里非常重要的风险控制点。</p>
+<h3 id="1-正常连接机制"><a href="#1-正常连接机制" class="headerlink" title="1. 正常连接机制"></a>1. 正常连接机制</h3><ul>
+<li>智能章与申请人手机通过蓝牙建立唯一绑定；</li>
+<li>手机 App 持续向智能章发送心跳；</li>
+<li>智能章通过 5G 向云平台上报：GPS、蓝牙状态、电量、锁定状态、设备状态；</li>
+<li>手机 App 同时向平台上报：当前登录人、蓝牙连接状态、手机位置、网络状态。</li>
+</ul>
+<p>平台可以同时判断“章的位置”和“人的位置”是否一致。</p>
+<h3 id="2-蓝牙断开后的分级处理"><a href="#2-蓝牙断开后的分级处理" class="headerlink" title="2. 蓝牙断开后的分级处理"></a>2. 蓝牙断开后的分级处理</h3><p>建议不要因瞬时信号抖动立刻认定失联，而采用分级规则：</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>系统动作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>蓝牙信号弱或短暂丢失，持续不足 30 秒</td>
+<td>记录事件，手机提示“请靠近智能章”</td>
+</tr>
+<tr>
+<td>连续断开超过 60 秒</td>
+<td>智能章蜂鸣&#x2F;灯光报警；手机 App 强提醒；平台生成中风险告警</td>
+</tr>
+<tr>
+<td>连续断开超过 3 分钟</td>
+<td>智能章锁定；通知申请人、印章管理员；平台升级高风险告警</td>
+</tr>
+<tr>
+<td>蓝牙断开且 GPS 距离明显异常</td>
+<td>直接高风险告警，通知主管人员</td>
+</tr>
+<tr>
+<td>蓝牙断开且设备被拆卸、移动异常或离线</td>
+<td>严重告警，可立即冻结未使用授权</td>
+</tr>
+</tbody></table>
+<p>报警应覆盖三端：</p>
+<ul>
+<li><strong>智能章端</strong>：蜂鸣器、灯光、屏幕提示、锁定；</li>
+<li><strong>申请人手机端</strong>：App 强提醒、震动、通知；</li>
+<li><strong>云平台端</strong>：告警中心、管理员通知，必要时短信或电话升级。</li>
+</ul>
+<p>断开报警后，即使恢复连接，也不能直接把风险事件“自动消失”。系统应保留断开时长、双方 GPS、恢复时间和处理记录，由管理员确认关闭。</p>
+<hr>
+<h2 id="六、外带与用章的关键约束"><a href="#六、外带与用章的关键约束" class="headerlink" title="六、外带与用章的关键约束"></a>六、外带与用章的关键约束</h2><ol>
+<li>一枚章一次只能绑定给一笔有效外带许可。</li>
+<li>一笔外带申请只对应一枚章。</li>
+<li>一笔外带申请下可发起多笔用章申请。</li>
+<li>每笔用章申请只能使用该外带申请中的同一枚章。</li>
+<li>一笔用章申请可上传多份文件。</li>
+<li>文件内容变化，文件哈希变化，原用章审批自动失效，必须重新申请。</li>
+<li>外带许可到期、印章冻结、印章交回、手机解绑、申请人变更时，所有未使用的用章授权自动失效。</li>
+<li>智能章外带期间默认锁定；没有有效用章授权，不允许操作。</li>
+<li>完成用章后必须上传证据；缺少照片、视频或文件哈希时，先提醒，逾期升级高风险告警。</li>
+<li>归还时由管理员验收印章、核对未关闭告警、核对用章记录和证据后，才能结束外带。</li>
+</ol>
+<hr>
+<h2 id="七、建议新增的核心数据对象"><a href="#七、建议新增的核心数据对象" class="headerlink" title="七、建议新增的核心数据对象"></a>七、建议新增的核心数据对象</h2><table>
+<thead>
+<tr>
+<th>数据表&#x2F;对象</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>outbound_applications</code></td>
+<td>外带申请主表</td>
+</tr>
+<tr>
+<td><code>outbound_handover_records</code></td>
+<td>管理员与申请人的交接、归还记录</td>
+</tr>
+<tr>
+<td><code>outbound_mobile_bindings</code></td>
+<td>外带期间智能章与手机的绑定关系</td>
+</tr>
+<tr>
+<td><code>seal_use_applications</code></td>
+<td>实际用章申请主表</td>
+</tr>
+<tr>
+<td><code>seal_use_files</code></td>
+<td>一次用章申请下的多个文件及哈希</td>
+</tr>
+<tr>
+<td><code>use_grants</code></td>
+<td>审批后下发的临时用章授权</td>
+</tr>
+<tr>
+<td><code>bluetooth_proximity_events</code></td>
+<td>蓝牙连接、断开、恢复、信号弱事件</td>
+</tr>
+<tr>
+<td><code>device_location_events</code></td>
+<td>智能章 GPS 轨迹和定位事件</td>
+</tr>
+<tr>
+<td><code>mobile_location_events</code></td>
+<td>申请人手机的位置核验记录</td>
+</tr>
+<tr>
+<td><code>seal_usage_records</code></td>
+<td>每一次实际用章记录</td>
+</tr>
+<tr>
+<td><code>evidence_files</code></td>
+<td>照片、视频、文件哈希等证据</td>
+</tr>
+<tr>
+<td><code>alerts</code></td>
+<td>风险告警及处置闭环记录</td>
+</tr>
+</tbody></table>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">John Doe</div><div class="post-copyright__author_desc"></div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://cuishuqq.github.io/2025/11/03/%E4%BA%91%E7%AB%A0-cui-%E5%A4%96%E5%B8%A6%E6%B5%81%E7%A8%8B%E8%AE%BE%E8%AE%A1/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('https://cuishuqq.github.io/2025/11/03/%E4%BA%91%E7%AB%A0-cui-%E5%A4%96%E5%B8%A6%E6%B5%81%E7%A8%8B%E8%AE%BE%E8%AE%A1/')">外带流程设计</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://github.com/cuishuqiang-edu/picx-images-hosting/raw/master/b0bdde69aa51ac660533ecc1c5367b19.2a5ri5dqaa.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://github.com/cuishuqiang-edu/picx-images-hosting/raw/master/b0bdde69aa51ac660533ecc1c5367b19.2a5ri5dqaa.webp" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://github.com/cuishuqiang-edu/picx-images-hosting/raw/master/6a1e2e6aef3b49c21652742017104ad4.7lko2v0b97.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://github.com/cuishuqiang-edu/picx-images-hosting/raw/master/6a1e2e6aef3b49c21652742017104ad4.7lko2v0b97.webp" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://cuishuqq.github.io/2025/11/03/%E4%BA%91%E7%AB%A0-cui-%E5%A4%96%E5%B8%A6%E6%B5%81%E7%A8%8B%E8%AE%BE%E8%AE%A1/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=外带流程设计&amp;url=https://cuishuqq.github.io/2025/11/03/%E4%BA%91%E7%AB%A0-cui-%E5%A4%96%E5%B8%A6%E6%B5%81%E7%A8%8B%E8%AE%BE%E8%AE%A1/&amp;pic=" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"></div></div></div><div class="post_share"><div class="social-share" data-image="https://github.com/cuishuqiang-edu/picx-images-hosting/raw/master/94c2923ce797cd5a4f590b733e0a61f9.8dxjl450i5.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2025/11/03/%E4%BA%91%E7%AB%A0-cui-%E5%A4%96%E5%B8%A6%E7%9C%9F%E5%AE%9E%E6%A1%88%E4%BE%8B/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">外带真实案例</div></div></a></div><div class="next-post pull-right"><a href="/2025/11/03/%E7%99%BE%E7%B1%B3/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">师哥给的方向-百米</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> Comment</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a><a href="/privacy" style="margin-left: 4px">隐私政策</a></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__description"></div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://bu.dusays.com/2023/05/13/645fa415e8694.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%96%E5%B8%A6%E8%8E%B7%E6%89%B9%E5%90%8E%EF%BC%8C%E7%AB%A0%E5%B9%B6%E4%B8%8D%E8%83%BD%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8%EF%BC%9B%E5%8F%AA%E6%9C%89%E5%86%8D%E5%AE%8C%E6%88%90%E4%B8%80%E6%AC%A1%E7%94%A8%E7%AB%A0%E7%94%B3%E8%AF%B7%E5%B9%B6%E8%8E%B7%E6%89%B9%EF%BC%8C%E6%99%BA%E8%83%BD%E7%AB%A0%E6%89%8D%E4%B8%B4%E6%97%B6%E8%A7%A3%E9%94%81%E3%80%81%E5%85%81%E8%AE%B8%E7%9B%96%E7%AB%A0%E3%80%82"><span class="toc-text">外带获批后，章并不能直接使用；只有再完成一次用章申请并获批，智能章才临时解锁、允许盖章。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%A4%96%E5%B8%A6%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B"><span class="toc-text">二、外带申请流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%94%B3%E8%AF%B7%E5%86%85%E5%AE%B9"><span class="toc-text">1. 申请内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AE%A1%E6%89%B9%E9%80%9A%E8%BF%87%E5%90%8E%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%9B%B4%E6%8E%A5%E6%8A%8A%E7%AB%A0%E4%BA%A4%E5%87%BA%E5%8E%BB"><span class="toc-text">2. 审批通过后，不是直接把章交出去</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%A4%96%E5%B8%A6%E6%9C%9F%E9%97%B4%E7%9A%84%E7%8A%B6%E6%80%81"><span class="toc-text">3. 外带期间的状态</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E7%94%A8%E7%AB%A0%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B"><span class="toc-text">三、用章申请流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%99%BA%E8%83%BD%E7%AB%A0%E5%AE%9E%E9%99%85%E6%94%BE%E8%A1%8C%E6%9D%A1%E4%BB%B6"><span class="toc-text">四、智能章实际放行条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E8%93%9D%E7%89%99%E6%96%AD%E5%BC%80%E4%B8%8E%E5%8F%8C%E7%AB%AF%E5%91%8A%E8%AD%A6%E6%96%B9%E6%A1%88"><span class="toc-text">五、蓝牙断开与双端告警方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%AD%A3%E5%B8%B8%E8%BF%9E%E6%8E%A5%E6%9C%BA%E5%88%B6"><span class="toc-text">1. 正常连接机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%93%9D%E7%89%99%E6%96%AD%E5%BC%80%E5%90%8E%E7%9A%84%E5%88%86%E7%BA%A7%E5%A4%84%E7%90%86"><span class="toc-text">2. 蓝牙断开后的分级处理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E5%A4%96%E5%B8%A6%E4%B8%8E%E7%94%A8%E7%AB%A0%E7%9A%84%E5%85%B3%E9%94%AE%E7%BA%A6%E6%9D%9F"><span class="toc-text">六、外带与用章的关键约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E5%BB%BA%E8%AE%AE%E6%96%B0%E5%A2%9E%E7%9A%84%E6%A0%B8%E5%BF%83%E6%95%B0%E6%8D%AE%E5%AF%B9%E8%B1%A1"><span class="toc-text">七、建议新增的核心数据对象</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/06/29/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/" title="小程序用户手册"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://github.com/cuishuqiang-edu/picx-images-hosting/raw/master/94c2923ce797cd5a4f590b733e0a61f9.8dxjl450i5.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="小程序用户手册"/></a><div class="content"><a class="title" href="/2026/06/29/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/" title="小程序用户手册">小程序用户手册</a><time datetime="2026-06-29T02:50:27.000Z" title="Created 2026-06-29 10:50:27">2026-06-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/06/17/71%E6%B4%BB%E5%8A%A8%E6%90%AD%E5%BB%BA/" title="71活动搭建"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://tse4.mm.bing.net/th/id/OIP.oQjvW5xnNjuxS1GwRwfZIQHaLH?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="71活动搭建"/></a><div class="content"><a class="title" href="/2026/06/17/71%E6%B4%BB%E5%8A%A8%E6%90%AD%E5%BB%BA/" title="71活动搭建">71活动搭建</a><time datetime="2026-06-17T02:47:39.000Z" title="Created 2026-06-17 10:47:39">2026-06-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/05/29/claudecode%E6%8C%87%E4%BB%A4/" title="claudecode指令"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/68c469d23594abeb9ab6ee48_70ed020ecf8fa028b9bc95fa819720b6_og_claude-generic.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="claudecode指令"/></a><div class="content"><a class="title" href="/2026/05/29/claudecode%E6%8C%87%E4%BB%A4/" title="claudecode指令">claudecode指令</a><time datetime="2026-05-29T02:43:50.000Z" title="Created 2026-05-29 10:43:50">2026-05-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/31/tmux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" title="tmux常用指令"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://ts4.tc.mm.bing.net/th/id/OIP-C.2809FXJ0tDhX0KSmWZ0Q2QHaD7?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="tmux常用指令"/></a><div class="content"><a class="title" href="/2026/03/31/tmux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" title="tmux常用指令">tmux常用指令</a><time datetime="2026-03-31T13:41:11.000Z" title="Created 2026-03-31 21:41:11">2026-03-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/12/FlashNet%E7%AC%94%E8%AE%B0/" title="FlashNet笔记"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://picui.ogmua.cn/s1/2026/03/07/69ac0bd556b02.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="FlashNet笔记"/></a><div class="content"><a class="title" href="/2026/03/12/FlashNet%E7%AC%94%E8%AE%B0/" title="FlashNet笔记">FlashNet笔记</a><time datetime="2026-03-12T12:06:42.000Z" title="Created 2026-03-12 20:06:42">2026-03-12</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2020 - 2026 By <a class="footer-bar-link" href="/" title="John Doe" target="_blank">John Doe</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">Articles</div><div class="length-num">27</div></a><a href="/tags/" title="tag"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/" title="category"><div class="headline">Categories</div><div class="length-num">0</div></a></div><span class="sidebar-menu-item-title">Function</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="Display Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>Display Mode</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><span class="sidebar-menu-item-title">标签</span></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/01/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2020 By 安知鱼 V1.6.14",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 John Doe 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'cuishuqq/cuishuqq.github.io',
+      'data-repo-id': 'R_kgDOPqZjXg',
+      'data-category-id': 'DIC_kwDOPqZjXs4DAHXo',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },{"data-lang":"zh-CN","data-mapping":"pathname","data-strict":"0","data-emit-metadata":"0","data-input-position":"bottom"})
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  anzhiyu.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
