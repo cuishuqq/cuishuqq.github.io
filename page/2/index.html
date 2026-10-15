@@ -60,7 +60,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2026-10-15 08:47:02',
+  postUpdate: '2026-10-15 08:48:41',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -275,7 +275,21 @@ New repository
 不要勾选 README &#x2F; .gitignore（避免冲突）
 
 
- ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/2025/12/15/12%E6%9C%8819/')"><div class="recent-post-info no-cover"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><span class="article-meta sticky-warp"><i class="anzhiyufont anzhiyu-icon-thumbtack sticky"></i><span class="sticky">Sticky</span></span><a class="unvisited-post" href="/2025/12/15/12%E6%9C%8819/" title="周报">未读</a></div><a class="article-title" href="/2025/12/15/12%E6%9C%8819/" title="周报">周报</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">Created</span><time datetime="2025-12-15T02:27:45.000Z" title="Created 2025-12-15 10:27:45" time="2025-12-15 10:27:45">2025-12-15</time><time class="time_hidden" datetime="2025-12-23T06:46:29.151Z" title="Updated 2025-12-23 14:46:29" time="2025-12-23 14:46:29">2025-12-23</time></span></div><div class="content">12月19 工作记录数据处理方面：
+ ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/2025/12/15/12-23Lightnet%E6%94%B9%E5%96%84/')"><div class="recent-post-info no-cover"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><span class="article-meta sticky-warp"><i class="anzhiyufont anzhiyu-icon-thumbtack sticky"></i><span class="sticky">Sticky</span></span><a class="unvisited-post" href="/2025/12/15/12-23Lightnet%E6%94%B9%E5%96%84/" title="改善想法">未读</a></div><a class="article-title" href="/2025/12/15/12-23Lightnet%E6%94%B9%E5%96%84/" title="改善想法">改善想法</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">Created</span><time datetime="2025-12-15T02:27:45.000Z" title="Created 2025-12-15 10:27:45" time="2025-12-15 10:27:45">2025-12-15</time><time class="time_hidden" datetime="2025-12-23T06:46:39.289Z" title="Updated 2025-12-23 14:46:39" time="2025-12-23 14:46:39">2025-12-23</time></span></div><div class="content">LightNetPlus 借鉴论文 MotionGRU + GAN 的改造方案（面向你现有 PyTorch 代码）
+目标：在尽量少改动你当前 LightNetPlus 结构的前提下，借鉴论文里的  
+
+MotionGRU（瞬态变化 + 趋势动量） 来增强多步滚动预测的稳定性与“运动一致性”  
+GAN 对抗训练（cGAN &#x2F; 序列判别） 来缓解“平均化模糊”，提升高密度雷电区域的细节、形态真实性
+
+
+
+0. 你当前模型结构回顾（为什么好改）你现有结构是典型的「多源编码 + 融合隐状态 + 自回归解码」：
+
+3 个 Encoder（WRF &#x2F; LIG &#x2F; AWS）分别提取时序特征，输出最后时刻隐状态 (h1,c1), (h2,c2), (h3,c3)
+通过 1×1 Conv 做通道对齐，然后 cat 得到融合的 (h,c)，通道&#x3D;64
+Decoder 采用自回归循环预测 num_PRED 步，每一步用 current_input 生成 out，再喂回去
+
+这非常契合 MotionGRU 的“每一步更新 motion state”，也很适合 GAN  ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/2025/12/15/12%E6%9C%8819/')"><div class="recent-post-info no-cover"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><span class="article-meta sticky-warp"><i class="anzhiyufont anzhiyu-icon-thumbtack sticky"></i><span class="sticky">Sticky</span></span><a class="unvisited-post" href="/2025/12/15/12%E6%9C%8819/" title="周报">未读</a></div><a class="article-title" href="/2025/12/15/12%E6%9C%8819/" title="周报">周报</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">Created</span><time datetime="2025-12-15T02:27:45.000Z" title="Created 2025-12-15 10:27:45" time="2025-12-15 10:27:45">2025-12-15</time><time class="time_hidden" datetime="2025-12-23T06:46:29.151Z" title="Updated 2025-12-23 14:46:29" time="2025-12-23 14:46:29">2025-12-23</time></span></div><div class="content">12月19 工作记录数据处理方面：
 实现了
 
 
@@ -363,21 +377,7 @@ NWP需要大量计算资源，难以满足频繁更新需求
 3. GAN架构优化利用生成对抗网络增强长时序预测能力，显著提高信噪比和预测分辨率。
 
 方法一：闪电高密度区域识别方法1.1 核心思想传统方法直接使用离散的闪电定位点进行预测，但由于闪电位置的时空分布具有明显的突变性和非连续性，直接外推精度很低。本研究提出将单次闪电看作一个概率源，通过概率叠加形成连续的高密度区域。
-1.2 技术实现流程步骤1：单次闪电的概率分布建模根据Zhang et al. (2017)的研究，闪电的分支结构水平 ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/2025/12/15/12-23Lightnet%E6%94%B9%E5%96%84/')"><div class="recent-post-info no-cover"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><span class="article-meta sticky-warp"><i class="anzhiyufont anzhiyu-icon-thumbtack sticky"></i><span class="sticky">Sticky</span></span><a class="unvisited-post" href="/2025/12/15/12-23Lightnet%E6%94%B9%E5%96%84/" title="改善想法">未读</a></div><a class="article-title" href="/2025/12/15/12-23Lightnet%E6%94%B9%E5%96%84/" title="改善想法">改善想法</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">Created</span><time datetime="2025-12-15T02:27:45.000Z" title="Created 2025-12-15 10:27:45" time="2025-12-15 10:27:45">2025-12-15</time><time class="time_hidden" datetime="2025-12-23T06:46:39.289Z" title="Updated 2025-12-23 14:46:39" time="2025-12-23 14:46:39">2025-12-23</time></span></div><div class="content">LightNetPlus 借鉴论文 MotionGRU + GAN 的改造方案（面向你现有 PyTorch 代码）
-目标：在尽量少改动你当前 LightNetPlus 结构的前提下，借鉴论文里的  
-
-MotionGRU（瞬态变化 + 趋势动量） 来增强多步滚动预测的稳定性与“运动一致性”  
-GAN 对抗训练（cGAN &#x2F; 序列判别） 来缓解“平均化模糊”，提升高密度雷电区域的细节、形态真实性
-
-
-
-0. 你当前模型结构回顾（为什么好改）你现有结构是典型的「多源编码 + 融合隐状态 + 自回归解码」：
-
-3 个 Encoder（WRF &#x2F; LIG &#x2F; AWS）分别提取时序特征，输出最后时刻隐状态 (h1,c1), (h2,c2), (h3,c3)
-通过 1×1 Conv 做通道对齐，然后 cat 得到融合的 (h,c)，通道&#x3D;64
-Decoder 采用自回归循环预测 num_PRED 步，每一步用 current_input 生成 out，再喂回去
-
-这非常契合 MotionGRU 的“每一步更新 motion state”，也很适合 GAN  ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/2025/12/15/%E5%8A%9B%E6%89%A3%E7%AE%97%E6%B3%95%E5%BF%83%E5%BE%97/')"><div class="recent-post-info no-cover"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><a class="unvisited-post" href="/2025/12/15/%E5%8A%9B%E6%89%A3%E7%AE%97%E6%B3%95%E5%BF%83%E5%BE%97/" title="力扣算法心得">未读</a></div><a class="article-title" href="/2025/12/15/%E5%8A%9B%E6%89%A3%E7%AE%97%E6%B3%95%E5%BF%83%E5%BE%97/" title="力扣算法心得">力扣算法心得</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">Created</span><time datetime="2025-12-15T02:27:45.000Z" title="Created 2025-12-15 10:27:45" time="2025-12-15 10:27:45">2025-12-15</time><time class="time_hidden" datetime="2025-12-15T02:34:13.419Z" title="Updated 2025-12-15 10:34:13" time="2025-12-15 10:34:13">2025-12-15</time></span></div><div class="content">爬楼梯问题现在有n阶楼梯，每次可以爬一步或者两步，提问最多有多少种爬法
+1.2 技术实现流程步骤1：单次闪电的概率分布建模根据Zhang et al. (2017)的研究，闪电的分支结构水平 ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/2025/12/15/%E5%8A%9B%E6%89%A3%E7%AE%97%E6%B3%95%E5%BF%83%E5%BE%97/')"><div class="recent-post-info no-cover"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><a class="unvisited-post" href="/2025/12/15/%E5%8A%9B%E6%89%A3%E7%AE%97%E6%B3%95%E5%BF%83%E5%BE%97/" title="力扣算法心得">未读</a></div><a class="article-title" href="/2025/12/15/%E5%8A%9B%E6%89%A3%E7%AE%97%E6%B3%95%E5%BF%83%E5%BE%97/" title="力扣算法心得">力扣算法心得</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">Created</span><time datetime="2025-12-15T02:27:45.000Z" title="Created 2025-12-15 10:27:45" time="2025-12-15 10:27:45">2025-12-15</time><time class="time_hidden" datetime="2025-12-15T02:34:13.419Z" title="Updated 2025-12-15 10:34:13" time="2025-12-15 10:34:13">2025-12-15</time></span></div><div class="content">爬楼梯问题现在有n阶楼梯，每次可以爬一步或者两步，提问最多有多少种爬法
 
 
 
